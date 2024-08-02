@@ -1,0 +1,91 @@
+*{box-sizing: border-box;}
+body{margin: 0;padding:0;}
+#main-container{
+    display: flex;flex-wrap: wrap;flex-direction: row;background-color: #1f1d2b;
+}
+aside{background-color: rgb(47, 43, 43);
+display:flex;flex-direction: column;height: 99vh;width:6%; justify-content: space-evenly;
+}
+.bttn{height: 10vh;display: flex;align-items: center;justify-content: center;
+    border-radius: 15px 0px 0px 16px;margin-left:2px;
+}
+.bttn button{padding:4px 13px;border-radius:8px;background-color:rgb(47, 43, 43);
+    border:0px solid #ea7c69;}
+.bttn a{color: #ea7c69;font-size:20px;}
+.bttn:hover{background-color:rgb(95, 95, 119);}
+.bttn button:hover{background-color:#ea7c69;}
+.bttn a:hover{color: white;}
+
+#main-content{background-color:rgb(95, 95, 119);display: flex;flex-direction: column;
+    width:60%;}
+.titl{display: flex;flex-direction: row;color: white;line-height:0px;padding-left: 5px;
+      height:10vh;justify-content: space-between;} 
+.titl p{color:rgb(193, 193, 193);font-size: small;} 
+.head-input input{margin-top: 10px;margin-right:7px;background-color:rgb(56, 55, 55);
+    color: aliceblue;padding: 9px;border: 1px solid grey;border-radius: 8px;}      
+#nav{display: flex;border-bottom:1px solid rgb(154, 153, 153);height:fit-content;flex-direction:row;flex-wrap: wrap;
+    }
+#nav ul li{list-style:none;display: inline;color:white;padding-bottom: 5px;}
+#nav ul li:hover{color:#ea7c69;;border-bottom:2px solid #ea7c69;cursor: pointer;}
+.choose{display: flex;justify-content: space-between;border-radius: 2px;}
+.choose p{color:white;font-size: 18px;margin-top:5px;}
+.choose select{background-color:black;color:white;padding: 7px 2px;margin-top:5px;
+    margin-right:5px;border: 1px solid grey;border-radius: 8px;}
+.food-box{color: aliceblue;background-color: black;display: flex;width:25%;padding:5px;
+    flex-direction: column;align-items: center;border-radius: 7%;margin: 10px;
+}
+.food-img img{width:100%;}
+.food-p{color:gainsboro;font-size: small;line-height:normal;}
+ article{display: flex; flex-direction:row;flex-wrap: wrap;
+    margin-top: 5px;justify-content: space-between;
+}
+.side-content{display: flex;width: 34%;flex-direction: column;align-items: center;flex-wrap:wrap;
+    background-color: #1f1d2b;color: aliceblue;padding:5px;}
+    .side-p{width:99%;border:1px solid black;}
+    .side-btn{display: flex;align-items: flex-start;width:99%;}
+    .side-btn button{padding: 6px;margin:2px 7px 2px 5px;background-color:#1f1d2b;border-radius:5px;
+        color:#ea7c69;border:1px solid rgb(158, 155, 155);}
+    .side-btn button:hover{background-color: #ea7c69;color: aliceblue;}    
+    .side-item{display: flex;width:99%;color: aliceblue;
+        font-size: 20px;}
+    .item{width:60%;padding:3px 0px 0px 12px;}.qty{width:20%;padding:3px 0px 0px 0px;}.price{width:20%;padding:3px 0px 0px 0px;}
+.side-order{display: flex;width: 99%;align-items: center;}
+    .order-img{width: 10%;}.order-text{width:51%;padding-left:7px;font-size: 15px;padding-top:10px;}
+    .order-btn{width: 18%;}.order-btn button{background-color:#363a4a;color: aliceblue;padding:9px 17px;
+        font-size:17px; border-radius:6px;border:none;}
+    .order-price{width: 20%;padding-left:7px;}
+.search{display: flex;width:99%;border: 1px dashed black;}    
+    .search-input{width: 80%;}.search-input input{background-color:#363a4a;color: aliceblue;
+        padding: 10px 1px;width: 89%;border-radius:6px;border:none;margin-left: 3px;padding-left:9px;
+    } ::placeholder{color: aliceblue;}
+    .search-delete{width:19%;}
+    .search-delete button{background-color: #363a4a;color: #ea7c69;border: 1px solid #ea7c69;
+        padding: 9px 14px;font-size:20px;border-radius:5px;}
+.discount{display: flex;width:99%;justify-content: space-between;} 
+ 
+.subtotal{display: flex;width:99%;justify-content:space-between;} 
+
+ @media  screen and (max-width:600px) {
+    aside{display: none;}
+    #main-content{flex-basis: 100%;}
+    .head-input input{margin-top: 5px;} 
+    #nav{flex-direction: column;height: fit-content;}
+    #nav ul li{padding-bottom:0px;}
+    article{flex-direction: column;align-items: center;}.food-box{width:50%;}
+.side-content{width: 99%;} 
+}
+@media  screen and (max-width:750px) {
+    aside{width:14%;} #main-content{width:80%;} .side-content{width:99%;}
+   .food-box{width:45%;}}
+@media  screen and (max-width:900px) {
+    .titl{justify-content: flex-start;}
+    .headp{width:64%;}
+    .head-input{width:33%;}
+    .head-input input{width:95%;}
+    article{justify-content: space-between;}
+
+.side-content{width:99%}#main-content{width:86%;}aside{width:14%;}
+
+}
+
+
